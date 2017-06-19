@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>永新县气象局</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="head_partial">
+        <%= image_tag "logo.png" %>
+        with some test
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
