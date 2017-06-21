@@ -9,12 +9,24 @@
   </head>
 
   <body>
-    <div id="content">
-      <div id="head_partial">
-        <%= image_tag "logo.png" %>
-        with some test
+    <div id="main_box" class="container-fluid">
+      <div id="head_box" class="row">
+        <div style="text-align: center;" id="logo"><%= image_tag "logo.png" %></div>
+        <nav id="navbar" class="navbar navbar-default">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">首页</a></li>
+            <li><a href="/">天气预报</a></li>
+            <li><a href="/">服务产品</a></li>
+            <li><a href="/">部门概况</a></li>
+            <li><a href="/">气象新闻</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/users/new">注册</a></li>
+            <li><a href="/users/login">登陆</a></li>
+          </ul>
+        </nav>
       </div>
+      <%= yield %>
     </div>
-    <%= yield %>
   </body>
 </html>
